@@ -3,8 +3,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.d4</groupId>
-    <artifactId>demo</artifactId>
+    <groupId>com.github.d4</groupId>
+    <artifactId>ti</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>demo</name>
 
@@ -70,18 +70,18 @@
                 <version>0.8.8</version>
                 <configuration>
                     <haltOnFailure>true</haltOnFailure>
-                    <excludes>
-                        <exclude>com/d4/lc/**/exception/**/*</exclude>
-                        <exclude>com/d4/lc/**/init/**/*</exclude>
-                        <exclude>com/d4/lc/**/config/**/*</exclude>
-                        <exclude>com/d4/lc/**/entity/**/*</exclude>
-                        <exclude>com/d4/lc/**/converter/**/*</exclude>
-                        <exclude>com/d4/lc/**/rq/**/*</exclude>
-                        <exclude>com/d4/lc/**/rs/**/*</exclude>
-                        <exclude>com/d4/lc/**/*Builder.class</exclude>
-                        <exclude>com/d4/lc/**/*DTO.class</exclude>
-                        <exclude>com/d4/lc/**/Starter.class</exclude>
-                    </excludes>
+<!--                    <excludes>-->
+<!--                        <exclude>com/d4/lc/**/exception/**/*</exclude>-->
+<!--                        <exclude>com/d4/lc/**/init/**/*</exclude>-->
+<!--                        <exclude>com/d4/lc/**/config/**/*</exclude>-->
+<!--                        <exclude>com/d4/lc/**/entity/**/*</exclude>-->
+<!--                        <exclude>com/d4/lc/**/converter/**/*</exclude>-->
+<!--                        <exclude>com/d4/lc/**/rq/**/*</exclude>-->
+<!--                        <exclude>com/d4/lc/**/rs/**/*</exclude>-->
+<!--                        <exclude>com/d4/lc/**/*Builder.class</exclude>-->
+<!--                        <exclude>com/d4/lc/**/*DTO.class</exclude>-->
+<!--                        <exclude>com/d4/lc/**/Starter.class</exclude>-->
+<!--                    </excludes>-->
                 </configuration>
                 <executions>
                     <execution>

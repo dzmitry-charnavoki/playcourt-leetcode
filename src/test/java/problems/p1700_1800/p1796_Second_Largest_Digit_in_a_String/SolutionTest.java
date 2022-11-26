@@ -1,13 +1,13 @@
-package com.d4.lc.string;
+package problems.p1700_1800.p1796_Second_Largest_Digit_in_a_String;
 
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
-public class StringSecondLargestDigitInStringTest {
+public class SolutionTest {
 
-   StringSecondLargestDigitInString test = new StringSecondLargestDigitInString();
+   Solution test = new Solution();
 
    @Test
    public void secondLargestTest() {

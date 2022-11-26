@@ -1,15 +1,21 @@
-[TOC]
 
-# ti
+# playcourt for leetcode problems in Java
 
-# dev land
+Repository to play with problems (leetcode)
 
-## checkstyle 
+
+
+___
+
+<details><summary>dev land </summary>
+this section will be moved
+
+## checkstyle
 
 [checkstyle doc](https://checkstyle.sourceforge.io/)
 
 * install plugin for IntelliJ Idea
-* setup it as CodeFormatter: 
+* setup it as CodeFormatter:
   * Settings -> Editor -> CodeStyle > Scheme -> Project
   * Settings -> Editor -> CodeStyle > Scheme -> Import Scheme -> Checkstyle Configuration
 
@@ -27,3 +33,7 @@ How to find a Maven dependency version declaration imported from a BOM
 ```
 mvn org.apache.maven.plugins:maven-help-plugin:3.2.0:effective-pom -Dverbose=true -Doutput=effective-pom.xml
 ```
+
+</details>
+
+
