@@ -1,6 +1,6 @@
 #### 1984. Minimum Difference Between Highest and Lowest of K Scores
 
-<style>
+<style type="text/css">
  .level {color:green;}
 </style>
 
