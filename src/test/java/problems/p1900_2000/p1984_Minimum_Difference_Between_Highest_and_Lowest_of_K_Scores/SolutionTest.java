@@ -9,7 +9,7 @@ class SolutionTest {
     @Test
     void minimumDifference() {
         assertEquals(0, new Solution().minimumDifference(new int[] {90},1));
-        assertEquals(0, new Solution().minimumDifference(new int[] {9,4,1,7},2));
+        assertEquals(2, new Solution().minimumDifference(new int[] {9,4,1,7},2));
     }
 
 }
