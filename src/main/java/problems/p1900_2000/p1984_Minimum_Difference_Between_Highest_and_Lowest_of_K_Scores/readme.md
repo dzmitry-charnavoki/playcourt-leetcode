@@ -1,16 +1,7 @@
 #### 1984. Minimum Difference Between Highest and Lowest of K Scores
 
-<style type="text/css">
- .level {color:green;}
-</style>
-
-<span class="level" >***Easy***</span>
+<span style="color:green">***Easy***</span>
 ___
-
-
-
-
-
 
 You are given a **0-indexed** integer array `nums`, where `nums[i]` represents the score of the <code>i<sup>th</sup></code> student. You are also given an integer `k`.
 
