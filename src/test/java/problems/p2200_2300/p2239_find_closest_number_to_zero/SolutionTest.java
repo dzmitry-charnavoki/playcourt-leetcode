@@ -1,4 +1,4 @@
-package problems.p2200_2300.p2239_Find_Closest_Number_to_Zero;
+package problems.p2200_2300.p2239_find_closest_number_to_zero;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

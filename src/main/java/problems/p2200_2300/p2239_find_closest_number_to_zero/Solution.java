@@ -1,4 +1,4 @@
-package problems.p2200_2300.p2239_Find_Closest_Number_to_Zero;
+package problems.p2200_2300.p2239_find_closest_number_to_zero;
 
 /**
  * Find Closest Number to Zero
@@ -6,7 +6,7 @@ package problems.p2200_2300.p2239_Find_Closest_Number_to_Zero;
  * If there are multiple answers, return the number with the largest value.
  * https://leetcode.com/problems/find-closest-number-to-zero/
  */
-public class Solution {
+class Solution {
 
     public int findClosestNumber(int[] nums) {
         int closest = nums[0];

@@ -1,4 +1,4 @@
-package problems.p1700_1800.p1796_Second_Largest_Digit_in_a_String;
+package problems.p1700_1800.p1796_second_largest_digit_in_a_string;
 
 import org.junit.jupiter.api.Test;
 

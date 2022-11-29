@@ -1,4 +1,4 @@
-package problems.p1700_1800.p1796_Second_Largest_Digit_in_a_String;
+package problems.p1700_1800.p1796_second_largest_digit_in_a_string;
 
 import java.util.Collections;
 import java.util.Set;
@@ -10,7 +10,7 @@ import java.util.TreeSet;
  * <a href="https://leetcode.com/problems/second-largest-digit-in-a-string/description/">string\second-largest-digit-in-a-string</a>
  * <a href="https://leetcode.com/problems/second-largest-digit-in-a-string/submissions/834909290/">submission</a>
  */
-public class Solution {
+class Solution {
 
     private static final int AT_LEAST_TWO_ITEMS = 2;
 

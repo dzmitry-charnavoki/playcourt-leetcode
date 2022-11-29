@@ -1,4 +1,4 @@
-package problems.p1900_2000.p1984_Minimum_Difference_Between_Highest_and_Lowest_of_K_Scores;
+package problems.p1900_2000.p1984_minimum_difference_between_highest_and_lowest_of_k_scores;
 
 import static org.junit.jupiter.api.Assertions.*;
 
