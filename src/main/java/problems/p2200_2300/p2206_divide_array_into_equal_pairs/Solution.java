@@ -5,8 +5,9 @@ class Solution {
     // #Easy #Array #Hash_Table @Set #Counting
 
     public boolean divideArray(int[] nums) {
-        if (nums.length % 2 !=
-            0) { // if nums length is odd, no sense to continue since we are not able to create pairs from array
+        // if nums length is odd, no sense to continue since we are not able
+        // to create pairs from array
+        if (nums.length % 2 != 0) {
             return false;
         }
         // instead of Set use list with number as index to count them
