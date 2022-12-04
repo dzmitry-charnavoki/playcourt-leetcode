@@ -18,8 +18,8 @@ class SolutionTest {
 
     @Test
     void checkIfPangramBit() {
-        assertEquals(false, new Solution().checkIfPangram("ercdefghijklmnopqrstuvwxyz"));
-        assertEquals(true, new Solution().checkIfPangram("abcdefghijklmnopqrstuvwxyz"));
+        assertEquals(false, new Solution().checkIfPangramBit("ercdefghijklmnopqrstuvwxyz"));
+        assertEquals(true, new Solution().checkIfPangramBit("abcdefghijklmnopqrstuvwxyz"));
         assertEquals(true, new Solution().checkIfPangramBit("thequickbrownfoxjumpsoverthelazydog"));
         assertEquals(false, new Solution().checkIfPangramBit("leetcode"));
     }

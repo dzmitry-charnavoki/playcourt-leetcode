@@ -1,8 +1,6 @@
 package problems.p0700_0800.p0796_rotate_string;
 
-/**
- *
- */
+
 class Solution {
 
     // bbbacddceeb, ceebbbbacdd, dota)))
