@@ -8,12 +8,21 @@ class SolutionTest {
 
     @Test
     void average11() {
-        assertEquals(2500, new Solution().average(new int[]{4000,3000,1000,2000}));
+        assertEquals(2500, new Solution().average(new int[] {4000, 3000, 1000, 2000}));
     }
 
     @Test
     void average12() {
-        assertEquals(2000, new Solution().average(new int[]{1000,2000,3000}));
+        assertEquals(2000, new Solution().average(new int[] {1000, 2000, 3000}));
     }
 
+    @Test
+    void average13() {
+        assertEquals(2500, new Solution().average(new int[] {4000, 3000, 2000, 1000}));
+    }
+
+    @Test
+    void average14() {
+        assertEquals(2500, new Solution().average(new int[] {1000, 2000, 3000, 4000}));
+    }
 }

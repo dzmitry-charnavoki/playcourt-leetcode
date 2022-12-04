@@ -22,14 +22,4 @@ class Solution {
         return a;
     }
 
-    /*
-    https://docs.oracle.com/javase/tutorial/java/nutsandbolts/opsummary.html
-    Bitwise Operator Table
-    A	B	A|B	A&B	A^B	~A
-    0	0	0	0	0	1
-    1	0	1	0	1	0
-    0	1	1	0	1	1
-    1	1	1	1	0	0
-     */
-
 }

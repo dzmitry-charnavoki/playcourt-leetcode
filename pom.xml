@@ -160,8 +160,8 @@
                     </dependency>
                 </dependencies>
                 <configuration>
-                    <targetJdk>17</targetJdk>
-                    <failOnViolation>true</failOnViolation>
+                    <targetJdk>11</targetJdk>
+                    <failOnViolation>false</failOnViolation>
                     <!--                    <includeTests>true</includeTests>-->
                     <includeTests>false</includeTests>
                     <excludeRoots>
