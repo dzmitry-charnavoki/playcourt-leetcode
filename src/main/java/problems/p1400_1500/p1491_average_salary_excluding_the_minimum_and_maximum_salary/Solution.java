@@ -6,16 +6,16 @@ class Solution {
         int sum = 0;
         int min = salary[0];
         int max = salary[0];
-        for (int i = 0; i < salary.length; i++) { //NOPMD - suppressed ForLoopCanBeForeach - TODO explain reason for suppression
-            sum += salary[i];
-            if (min > salary[i]) {
-                min = salary[i];
+        for (int j : salary) {
+            sum += j;
+            if (min > j) {
+                min = j;
             }
-            if (max < salary[i]) {
-                max = salary[i];
+            if (max < j) {
+                max = j;
             }
         }
-        r = (sum - min - max) / (salary.length - 2);
+        r = (double) (sum - min - max) / (salary.length - 2);
 
         return r;
     }

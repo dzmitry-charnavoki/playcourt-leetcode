@@ -27,8 +27,8 @@ class SolutionTest {
 
     @Test
     void rotateStringDoubleANegative() {
-        assertEquals(false, new Solution().rotateString("", "cdeab"));
-        assertEquals(false, new Solution().rotateString("abcd", "cdeab"));
-        assertEquals(false, new Solution().rotateString("abcde", "abced"));
+        assertEquals(false, new Solution().rotateStringDoubleA("", "cdeab"));
+        assertEquals(false, new Solution().rotateStringDoubleA("abcd", "cdeab"));
+        assertEquals(false, new Solution().rotateStringDoubleA("abcde", "abced"));
     }
 }
