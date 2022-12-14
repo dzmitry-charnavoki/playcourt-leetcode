@@ -13,7 +13,7 @@ class Solution {
     //    b 0b00010010 << 1
     //repeat
     public int getSum(int a, int b) {
-        int carry=0;
+        int carry = 0;
         do {
             carry = a & b;
             a = a ^ b;

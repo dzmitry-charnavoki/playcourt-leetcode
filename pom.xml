@@ -70,8 +70,8 @@
                 <version>0.8.8</version>
                 <configuration>
                     <haltOnFailure>true</haltOnFailure>
-<!--                    <excludes>-->
-<!--                        <exclude>com/d4/lc/**/exception/**/*</exclude>-->
+                    <excludes>
+                        <exclude>utils/**/*</exclude>
 <!--                        <exclude>com/d4/lc/**/init/**/*</exclude>-->
 <!--                        <exclude>com/d4/lc/**/config/**/*</exclude>-->
 <!--                        <exclude>com/d4/lc/**/entity/**/*</exclude>-->
@@ -81,7 +81,7 @@
 <!--                        <exclude>com/d4/lc/**/*Builder.class</exclude>-->
 <!--                        <exclude>com/d4/lc/**/*DTO.class</exclude>-->
 <!--                        <exclude>com/d4/lc/**/Starter.class</exclude>-->
-<!--                    </excludes>-->
+                    </excludes>
                 </configuration>
                 <executions>
                     <execution>
