@@ -35,4 +35,5 @@ class SolutionTest {
         assertEquals(17711, new Solution().climbStairsBottomUp(21));
     }
 
+    // https://artofproblemsolving.com/wiki/index.php/Binet%27s_Formula
 }
