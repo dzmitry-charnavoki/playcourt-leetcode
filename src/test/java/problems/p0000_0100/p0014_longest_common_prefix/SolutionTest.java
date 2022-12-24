@@ -13,15 +13,27 @@ class SolutionTest {
     }
 
     @Test
+    void longestCommonPrefix11() {
+        assertEquals("fl",
+            new Solution().longestCommonPrefix(new String[] {"flow", "flower", "flight"}));
+    }
+
+    @Test
     void longestCommonPrefix2() {
         assertEquals("",
-            new Solution().longestCommonPrefix(new String[] {"dog","racecar","car"}));
+            new Solution().longestCommonPrefix(new String[] {"dog", "racecar", "car"}));
     }
 
     @Test
     void longestCommonPrefix3() {
         assertEquals("ab",
-            new Solution().longestCommonPrefix(new String[] {"abb","abc"}));
+            new Solution().longestCommonPrefix(new String[] {"abb", "abc"}));
+    }
+
+    @Test
+    void longestCommonPrefix31() {
+        assertEquals("a",
+            new Solution().longestCommonPrefix(new String[] {"ab", "a"}));
     }
 
     @Test
@@ -43,20 +55,26 @@ class SolutionTest {
     }
 
     @Test
+    void longestCommonPrefix53() {
+        assertEquals("",
+            new Solution().longestCommonPrefix(new String[0]));
+    }
+
+    @Test
     void longestCommonPrefix6() {
         assertEquals("",
-            new Solution().longestCommonPrefix(new String[] {"",""}));
+            new Solution().longestCommonPrefix(new String[] {"", ""}));
     }
 
     @Test
     void longestCommonPrefix7() {
         assertEquals("c",
-            new Solution().longestCommonPrefix(new String[] {"c","c"}));
+            new Solution().longestCommonPrefix(new String[] {"c", "c"}));
     }
 
     @Test
     void longestCommonPrefix8() {
         assertEquals("c",
-            new Solution().longestCommonPrefix(new String[] {"c","cdd"}));
+            new Solution().longestCommonPrefix(new String[] {"c", "cdd"}));
     }
 }

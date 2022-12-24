@@ -9,6 +9,11 @@ import utils.ListNode;
 class SolutionTest {
 
     @Test
+    void hasCycle10() {
+        assertFalse(new Solution().hasCycle(DataGenerator.createObj(3,2,-4)));
+    }
+
+    @Test
     void hasCycle11() {
         ListNode n = DataGenerator.createObj(3,2,0,-4);
         n.next.next.next.next = n.next;

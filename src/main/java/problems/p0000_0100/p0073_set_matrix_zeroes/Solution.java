@@ -37,9 +37,13 @@ class Solution {
         for (int i = matrix.length - 1; i >= 0; i--) {
             for (int j = matrix[i].length - 1; j >= 0; j--) {
                 if (matrix[0][j] == 0
-                    || matrix[i][0] == 0
-                    || row0 && i == 0 // if first row
-                    || col0 && j == 0) { // if first col
+                    || matrix[i][0] == 0) {
+                    matrix[i][j] = 0;
+                }
+                if (row0 && i == 0) { // if first row
+                    matrix[i][j] = 0;
+                }
+                if (col0 && j == 0) { // if first col
                     matrix[i][j] = 0;
                 }
             }
