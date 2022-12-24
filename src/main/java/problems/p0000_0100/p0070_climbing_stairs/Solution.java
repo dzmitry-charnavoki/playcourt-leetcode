@@ -2,7 +2,6 @@ package problems.p0000_0100.p0070_climbing_stairs;
 
 class Solution {
     int[] memo = new int[46];
-    int r = 0;
 
     public int climbStairs(int n) {
         if (memo[n] != 0) {

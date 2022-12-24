@@ -5,7 +5,6 @@ class Solution {
     public int missingNumberBitM(int[] nums) {
         int m = 0;
         for (int i = 0; i < nums.length; i++) {
-            System.out.println(nums[i] + "^" + (i + 1));
             m ^= nums[i] ^ (i + 1);
         }
         return m;
