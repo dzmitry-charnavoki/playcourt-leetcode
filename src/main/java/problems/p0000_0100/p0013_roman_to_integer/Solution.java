@@ -13,7 +13,7 @@ class Solution {
         romanMap.put('C', 100);
         romanMap.put('D', 500);
         romanMap.put('M', 1000);
-        int n = s.length()-1;
+        int n = s.length() - 1;
 
         int num = romanMap.get(s.charAt(n));
         for (int i = n - 1; i >= 0; i--) {

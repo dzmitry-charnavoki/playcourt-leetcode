@@ -1,9 +1,13 @@
 package utils;
 
-/**
+/** Utility class.
  *
  */
 public class DataGenerator {
+
+    /** Generation of List of ListNode's.
+     *
+     */
     public static ListNode createObj(int... nums) {
         if (nums == null || nums.length == 0) {
             return null;
