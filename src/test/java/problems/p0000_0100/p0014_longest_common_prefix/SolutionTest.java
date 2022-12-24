@@ -37,6 +37,12 @@ class SolutionTest {
     }
 
     @Test
+    void longestCommonPrefix52() {
+        assertEquals("",
+            new Solution().longestCommonPrefix(null));
+    }
+
+    @Test
     void longestCommonPrefix6() {
         assertEquals("",
             new Solution().longestCommonPrefix(new String[] {"",""}));

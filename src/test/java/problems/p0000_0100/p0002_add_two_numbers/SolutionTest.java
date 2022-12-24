@@ -28,4 +28,16 @@ class SolutionTest {
         assertEquals("8, 9, 9, 9, 0, 0, 0, 1",
             new Solution().addTwoNumbers(listNode1, listNode2).toString());
     }
+
+    @Test
+    void addTwoNumbers4() {
+        assertEquals("0",
+            new Solution().addTwoNumbers(null, new ListNode(0)).toString());
+    }
+
+    @Test
+    void addTwoNumbers5() {
+        assertEquals("0",
+            new Solution().addTwoNumbers(new ListNode(0), null).toString());
+    }
 }

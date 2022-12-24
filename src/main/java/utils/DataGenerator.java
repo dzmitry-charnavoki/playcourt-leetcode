@@ -1,5 +1,8 @@
 package utils;
 
+/**
+ *
+ */
 public class DataGenerator {
     public static ListNode createObj(int... nums) {
         if (nums == null || nums.length == 0) {
