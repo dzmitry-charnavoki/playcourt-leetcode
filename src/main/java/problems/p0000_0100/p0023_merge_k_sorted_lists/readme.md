@@ -1,6 +1,6 @@
 #### 23. Merge k Sorted Lists
 
-<span style="color:red">***Hard***</span>
+<span style="color:#FF375F">***Hard***</span>
 ___
 
 You are given an array of `k` linked-lists `lists`, each linked-list is sorted in ascending order.
