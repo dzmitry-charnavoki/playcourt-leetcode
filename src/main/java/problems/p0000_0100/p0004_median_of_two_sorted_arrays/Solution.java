@@ -42,7 +42,7 @@ class Solution {
         }
 
         if (isTwo) {
-            med = (double)(two[0] + two[1]) / 2;
+            med = (double) (two[0] + two[1]) / 2;
         } else {
             med = two[1];
         }

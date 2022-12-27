@@ -11,7 +11,7 @@ class Solution {
         int st = 0;
         int end = 0;
 
-        while(end < s.length()) {
+        while (end < s.length()) {
             char c = s.charAt(end);
             if (chars.add(c)) {
                 end++;
