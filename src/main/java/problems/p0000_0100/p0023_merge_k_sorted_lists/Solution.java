@@ -9,11 +9,11 @@ class Solution {
     /**
      * see the task 21 as prerequisite.
      * https://afteracademy.com/blog/merge-k-sorted-lists/
-     *
+     * --------
      * https://favtutor.com/blogs/merge-k-sorted-lists
      * PriorityQueue 'pq' implemented as min heap
      */
-    public ListNode mergeKListsMinHeap(ListNode[] lists) {
+    public ListNode mergeKofListsMinHeap(ListNode[] lists) {
 
         PriorityQueue<ListNode> pq = new PriorityQueue<>(Comparator.comparingInt(a -> a.val));
 
