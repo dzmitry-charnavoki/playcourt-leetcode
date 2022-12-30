@@ -1,7 +1,5 @@
 package problems.p0000_0100.p0053_maximum_subarray;
 
-import java.util.Arrays;
-
 class Solution {
 
     // -2,1,-3,4,-1,2,1,-5,4

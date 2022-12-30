@@ -7,7 +7,7 @@ class Solution {
         int r = 0;
         for (int i = 0; i < 32; i++) {
             r <<= 1;
-            r |= (n & 0b1);
+            r |= n & 0b1;
             n >>= 1;
         }
         return r;
