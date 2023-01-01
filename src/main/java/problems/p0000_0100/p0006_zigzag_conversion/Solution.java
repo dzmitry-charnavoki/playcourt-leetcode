@@ -13,7 +13,6 @@ class Solution {
     // Y A   H R
     // P     I
     // PINALSIGYAHRPI
-    // https://www.tutorialcup.com/leetcode-solutions/zigzag-conversion-leetcode-solution.htm
 
     // 01234567890123
     // PAYPALISHIRING 4
