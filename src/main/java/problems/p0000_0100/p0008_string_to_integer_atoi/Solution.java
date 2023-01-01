@@ -1,6 +1,6 @@
 package problems.p0000_0100.p0008_string_to_integer_atoi;
 
-public class Solution {
+class Solution {
     public int myAtoi(String s) {
         long v = 0;
         int cur = 0;

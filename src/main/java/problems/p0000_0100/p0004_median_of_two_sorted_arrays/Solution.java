@@ -7,7 +7,6 @@ class Solution {
     // https://en.wikipedia.org/wiki/Median_of_medians
     // https://russianblogs.com/article/6686238268/
 
-
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         // TODO need to review
         int[] two = new int[2];
