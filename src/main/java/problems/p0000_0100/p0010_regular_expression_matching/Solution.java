@@ -7,9 +7,9 @@ class Solution {
 
         for (int i = text.length(); i >= 0; i--) {
             for (int j = pattern.length() - 1; j >= 0; j--) {
-                boolean firstMatch = (i < text.length()
+                boolean firstMatch = i < text.length()
                     && (pattern.charAt(j) == text.charAt(i)
-                    || pattern.charAt(j) == '.'));
+                    || pattern.charAt(j) == '.');
                 if (j + 1 < pattern.length() && pattern.charAt(j + 1) == '*') {
                     dp[i][j] = dp[i][j + 2] || firstMatch && dp[i + 1][j];
                 } else {
@@ -28,7 +28,7 @@ class Solution {
 
         if (p.length() >= 2 && p.charAt(1) == '*') {
             return isMatchRecursion(s, p.substring(2))
-                || (first && isMatchRecursion(s.substring(1), p));
+                || first && isMatchRecursion(s.substring(1), p);
         } else {
             return first && isMatchRecursion(s.substring(1), p.substring(1));
         }
