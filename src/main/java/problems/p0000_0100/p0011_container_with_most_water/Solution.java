@@ -1,6 +1,6 @@
 package problems.p0000_0100.p0011_container_with_most_water;
 
-public class Solution {
+class Solution {
 
     public int maxArea(int[] height) {
         int left = 0;
