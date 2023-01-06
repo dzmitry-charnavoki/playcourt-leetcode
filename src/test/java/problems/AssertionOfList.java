@@ -25,6 +25,9 @@ public final class AssertionOfList {
             //                assertEquals(expected.get(i).get(j), actual.get(i).get(j));
             //            }
         }
+        for (int i = 0; i < actual.size(); i++) {
+            assertIterableEquals(expected.get(i), actual.get(i));
+        }
     }
 
 }
