@@ -11,10 +11,10 @@ class Solution {
         int n = nums.length;
 
         for (int i = 0; i < n; i++) {
-            int l = i + 1, r = n - 1;
+            int l = i + 1;
+            int r = n - 1;
             while (l < r) {
                 if (nums[l] + nums[r] == -nums[i]) {
-                    //System.out.println(p + " " + q);
                     List<Integer> t = new ArrayList<>();
                     t.add(nums[i]);
                     t.add(nums[l]);
