@@ -12,6 +12,7 @@ file renamed because changed
 ### 02. Changed configuration
 
 Commented or Changed next modules:
+     mm/DD
 
 #### 11/4 : LeftCurly & RightCurly
 
@@ -22,3 +23,8 @@ LeftCurly, RightCurly
 old: `^[a-z]+(\.[a-z][a-z0-9]*)*$`
 new: `^[a-z]+(\.[a-z]\_[a-z0-9]*)*$`
 
+#### 01/09 Snoozed JavaDoc 
+
+MissingJavadocType
+MissingJavadocMethod
+SummaryJavadoc
