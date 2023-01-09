@@ -1,9 +1,8 @@
 package problems.p0000_0100.p0002_add_two_numbers;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
-import utils.DataGenerator;
 import utils.ListNode;
 
 class SolutionTest {
@@ -23,8 +22,8 @@ class SolutionTest {
 
     @Test
     void addTwoNumbers3() {
-        ListNode listNode1 = DataGenerator.createObj(9, 9, 9, 9, 9, 9, 9);
-        ListNode listNode2 = DataGenerator.createObj(9, 9, 9, 9);
+        ListNode listNode1 = ListNode.of(9, 9, 9, 9, 9, 9, 9);
+        ListNode listNode2 = ListNode.of(9, 9, 9, 9);
         assertEquals("8, 9, 9, 9, 0, 0, 0, 1",
             new Solution().addTwoNumbers(listNode1, listNode2).toString());
     }

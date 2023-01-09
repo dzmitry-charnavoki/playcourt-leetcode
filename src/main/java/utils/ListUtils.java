@@ -3,7 +3,7 @@ package utils;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ListUtils {
+public final class ListUtils {
     private ListUtils() {
     }
 

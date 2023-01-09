@@ -21,5 +21,10 @@ class SolutionTest {
         assertFalse(new Solution().isValid("[("));
     }
 
+    @Test
+    void isValid_n3() {
+        assertFalse(new Solution().isValid("]}"));
+    }
+
 
 }

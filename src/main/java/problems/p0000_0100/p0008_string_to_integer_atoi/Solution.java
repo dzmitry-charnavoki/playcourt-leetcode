@@ -21,7 +21,7 @@ class Solution {
 
         while (cur < s.length() && s.charAt(cur) >= '0' && s.charAt(cur) <= '9') {
             int digit = s.charAt(cur) - '0';
-            if (digit == 0 & v == 0) {
+            if (digit == 0 && v == 0) {
                 cur++;
                 continue;
             }
