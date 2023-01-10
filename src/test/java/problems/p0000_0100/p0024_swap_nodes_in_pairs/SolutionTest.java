@@ -45,4 +45,25 @@ class SolutionTest {
                 ListNode
                     .of()));
     }
+
+    // https://www.enjoyalgorithms.com/blog/swap-list-nodes-in-pairs
+    public static ListNode swapPairs(ListNode head) {
+        if (head == null || head.next == null) return head;
+
+        ListNode left = head;
+        ListNode right = head.next;
+
+        left.next = swapPairs(right.next);
+        right.next = left;
+
+        return right;
+    }
+
+    @Test
+    void swapPairs_alternative() {
+        assertEquals("2, 1, 4, 3",
+            swapPairs(
+                ListNode
+                    .of(1, 2, 3, 4)).toString());
+    }
 }
