@@ -12,6 +12,7 @@
 
     <properties>
         <java.version>11</java.version>
+        <maven.version>3.5.0</maven.version>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <project.jdk.version>11</project.jdk.version>
@@ -19,7 +20,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-        <junit5.version>5.9.1</junit5.version>
+        <junit5.version>5.9.2</junit5.version>
     </properties>
 
     <dependencies>
@@ -157,12 +158,12 @@
                     <dependency>
                         <groupId>net.sourceforge.pmd</groupId>
                         <artifactId>pmd-core</artifactId>
-                        <version>6.51.0</version>
+                        <version>6.53.0</version>
                     </dependency>
                     <dependency>
                         <groupId>net.sourceforge.pmd</groupId>
                         <artifactId>pmd-java</artifactId>
-                        <version>6.51.0</version>
+                        <version>6.53.0</version>
                     </dependency>
                 </dependencies>
                 <configuration>
@@ -200,7 +201,7 @@
                     <dependency>
                         <groupId>com.puppycrawl.tools</groupId>
                         <artifactId>checkstyle</artifactId>
-                        <version>10.4</version>
+                        <version>10.6.0</version>
                     </dependency>
                 </dependencies>
                 <configuration>
@@ -220,7 +221,38 @@
                     </execution>
                 </executions>
             </plugin>
-
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-enforcer-plugin</artifactId>
+                <version>3.1.0</version>
+                <executions>
+                    <execution>
+                        <id>enforce-versions</id>
+                        <goals>
+                            <goal>enforce</goal>
+                        </goals>
+                        <configuration>
+                            <rules>
+                                <requireMavenVersion>
+                                    <message>.
+                                        *** ERROR: Maven version ${maven.version} or higher is required ***
+                                        .
+                                    </message>
+                                    <version>[3.5.0,)</version>
+                                </requireMavenVersion>
+                                <requireJavaVersion>
+                                    <message>.
+                                        *** ERROR: Detected JDK version ${java.version}, We need JDK
+                                        ${project.jdk.version} or higher ***
+                                        .
+                                    </message>
+                                    <version>${project.jdk.version}</version>
+                                </requireJavaVersion>
+                            </rules>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
             <plugin>
                 <groupId>org.codehaus.gmaven</groupId>
                 <artifactId>groovy-maven-plugin</artifactId>
