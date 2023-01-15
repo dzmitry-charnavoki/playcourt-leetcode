@@ -1,4 +1,5 @@
-[![Java CI](https://github.com/javadev/LeetCode-in-Java/actions/workflows/maven.yml/badge.svg)](https://github.com/dzmitry-charnavoki/playcourt-leetcode/actions/workflows/ci.yml)
+[![CI](https://github.com/javadev/LeetCode-in-Java/actions/workflows/maven.yml/badge.svg)](https://github.com/dzmitry-charnavoki/playcourt-leetcode/actions/workflows/ci.yml)
+
 
 ## playcourt for leetcode problems in Java
 
