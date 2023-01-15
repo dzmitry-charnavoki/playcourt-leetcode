@@ -17,7 +17,8 @@ class Solution {
         }
         // end of checking length
 
-        ListNode current = head; //current as the first node of group becomes further link in the chain
+        //current as the first node of group becomes further link in the chain
+        ListNode current = head;
         ListNode next = null;
         ListNode prev = null;
         int i = 0;
