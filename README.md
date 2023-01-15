@@ -1,5 +1,6 @@
+[![Java CI](https://github.com/javadev/LeetCode-in-Java/actions/workflows/maven.yml/badge.svg)](https://github.com/dzmitry-charnavoki/playcourt-leetcode/actions/workflows/ci.yml)
 
-# playcourt for leetcode problems in Java
+## playcourt for leetcode problems in Java
 
 Repository to play with problems (leetcode)
 
@@ -7,10 +8,13 @@ Repository to play with problems (leetcode)
 
 ___
 
+
 <details><summary>dev land </summary>
 this section will be moved
 
-## checkstyle
+## Dev
+
+### checkstyle
 
 [checkstyle doc](https://checkstyle.sourceforge.io/)
 
@@ -19,7 +23,7 @@ this section will be moved
   * Settings -> Editor -> CodeStyle > Scheme -> Project
   * Settings -> Editor -> CodeStyle > Scheme -> Import Scheme -> Checkstyle Configuration
 
-## useful cmds
+### useful cmds
 
 How to check new versions
 ```cmd
