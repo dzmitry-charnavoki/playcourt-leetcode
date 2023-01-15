@@ -1,6 +1,8 @@
 
 [![CI](https://github.com/dzmitry-charnavoki/playcourt-leetcode/actions/workflows/ci.yml/badge.svg)](https://github.com/dzmitry-charnavoki/playcourt-leetcode/actions/workflows/ci.yml)
 
+![CI](https://github.com/dzmitry-charnavoki/playcourt-leetcode/actions/workflows/ci.yml/badge.svg?branch=main)
+
 
 ## playcourt for leetcode problems in Java
 
