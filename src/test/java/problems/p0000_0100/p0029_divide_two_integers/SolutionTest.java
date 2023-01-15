@@ -35,4 +35,10 @@ class SolutionTest {
     void divide4() {
         assertEquals(Integer.MAX_VALUE, new Solution().divide(Integer.MIN_VALUE, -1));
     }
+
+    @Test
+    void divide5() {
+        assertEquals(Integer.MAX_VALUE, new Solution().divide(Integer.MIN_VALUE, 0));
+    }
+
 }

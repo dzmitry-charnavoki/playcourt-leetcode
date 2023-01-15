@@ -43,4 +43,16 @@ class SolutionTest {
 
         assertArrayEquals(new int[] {}, res);
     }
+
+    @Test
+    void removeElement4() {
+        int k = 0;
+        int v = 1;
+        int[] act = new int[] {};
+
+        assertEquals(k, new Solution().removeElement(act, v));
+        int[] res = Arrays.copyOf(act, k);
+
+        assertArrayEquals(new int[] {}, res);
+    }
 }
