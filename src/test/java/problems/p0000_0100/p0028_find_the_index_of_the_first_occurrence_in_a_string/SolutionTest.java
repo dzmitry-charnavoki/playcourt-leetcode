@@ -35,5 +35,9 @@ class SolutionTest {
     void strStr5() {
         assertEquals(5, new Solution().strStr("avdsvfbbrethjq", "f"));
     }
+    @Test
+    void strStr6() {
+        assertEquals(-1, new Solution().strStr("mississippi", "issipi"));
+    }
 
 }

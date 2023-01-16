@@ -13,7 +13,9 @@ class Solution {
         for (int i = 0; i < haystack.length(); i++) {
             if (haystack.charAt(i) == n) {
                 int in = 1;
-                while (in < needle.length() && needle.charAt(in) == haystack.charAt(i + in)) {
+                while (in < needle.length()
+                    && in + i < haystack.length()
+                    && needle.charAt(in) == haystack.charAt(i + in)) {
                     in++;
                 }
                 if (in == needle.length()) {
