@@ -2,6 +2,7 @@ package problems.p0000_0100.p0028_find_the_index_of_the_first_occurrence_in_a_st
 
 class Solution {
 
+    // without substring
     public int strStr(String haystack, String needle) {
         if (needle.length() == 0) {
             return 0;
