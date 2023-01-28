@@ -287,8 +287,8 @@
                                     def branchMissed = totalRow.td[3]
                                     def branchRatio = totalRow.td[4]
                                     println "\n-------------- Jacoco Coverage ---------------------"
-                                    println "Lines    : ${instructionRatio} (${instructionMissed})"
-                                    println "Branches : ${branchRatio} (${branchMissed})"
+                                    println "Lines    : $instructionRatio ($instructionMissed)"
+                                    println "Branches : $branchRatio ($branchMissed)"
                                     println "----------------------------------------------------\n"
                                 }
 
