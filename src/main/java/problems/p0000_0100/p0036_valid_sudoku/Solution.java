@@ -12,9 +12,9 @@ class Solution {
                     continue;
                 }
                 final char c = board[i][j];
-                if (!seen.add(c + "@row" + i) ||
-                    !seen.add(c + "@col" + j) ||
-                    !seen.add(c + "@box" + i / 3 + j / 3)) {
+                if (!seen.add(c + "@row" + i)
+                    || !seen.add(c + "@col" + j)
+                    || !seen.add(c + "@box" + i / 3 + j / 3)) {
                     return false;
                 }
             }
