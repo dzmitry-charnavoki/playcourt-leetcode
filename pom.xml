@@ -36,12 +36,6 @@
             <version>${junit5.version}</version>
             <scope>test</scope>
         </dependency>
-<!--        <dependency>-->
-<!--            <groupId>org.hamcrest</groupId>-->
-<!--            <artifactId>hamcrest-core</artifactId>-->
-<!--            <version>[2.2,)</version>-->
-<!--            <scope>test</scope>-->
-<!--        </dependency>-->
     </dependencies>
 
     <build>
@@ -79,15 +73,15 @@
                     <haltOnFailure>true</haltOnFailure>
                     <excludes>
                         <exclude>utils/**/*</exclude>
-<!--                        <exclude>com/d4/lc/**/init/**/*</exclude>-->
-<!--                        <exclude>com/d4/lc/**/config/**/*</exclude>-->
-<!--                        <exclude>com/d4/lc/**/entity/**/*</exclude>-->
-<!--                        <exclude>com/d4/lc/**/converter/**/*</exclude>-->
-<!--                        <exclude>com/d4/lc/**/rq/**/*</exclude>-->
-<!--                        <exclude>com/d4/lc/**/rs/**/*</exclude>-->
-<!--                        <exclude>com/d4/lc/**/*Builder.class</exclude>-->
-<!--                        <exclude>com/d4/lc/**/*DTO.class</exclude>-->
-<!--                        <exclude>com/d4/lc/**/Starter.class</exclude>-->
+                        <!--                        <exclude>com/d4/lc/**/init/**/*</exclude>-->
+                        <!--                        <exclude>com/d4/lc/**/config/**/*</exclude>-->
+                        <!--                        <exclude>com/d4/lc/**/entity/**/*</exclude>-->
+                        <!--                        <exclude>com/d4/lc/**/converter/**/*</exclude>-->
+                        <!--                        <exclude>com/d4/lc/**/rq/**/*</exclude>-->
+                        <!--                        <exclude>com/d4/lc/**/rs/**/*</exclude>-->
+                        <!--                        <exclude>com/d4/lc/**/*Builder.class</exclude>-->
+                        <!--                        <exclude>com/d4/lc/**/*DTO.class</exclude>-->
+                        <!--                        <exclude>com/d4/lc/**/Starter.class</exclude>-->
                     </excludes>
                 </configuration>
                 <executions>
@@ -196,7 +190,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-checkstyle-plugin</artifactId>
-                <version>3.2.0</version>
+                <version>3.2.1</version>
                 <dependencies>
                     <dependency>
                         <groupId>com.puppycrawl.tools</groupId>
@@ -207,9 +201,10 @@
                 <configuration>
                     <skip>false</skip>
                     <failsOnError>true</failsOnError>
+                    <failOnViolation>true</failOnViolation>
                     <configLocation>/config/_custom_checks_.xml</configLocation>
                     <consoleOutput>true</consoleOutput>
-                    <violationSeverity>warn</violationSeverity>
+                    <violationSeverity>warning</violationSeverity>
                 </configuration>
                 <executions>
                     <execution>
@@ -254,18 +249,28 @@
                 </executions>
             </plugin>
             <plugin>
-                <groupId>org.codehaus.gmaven</groupId>
-                <artifactId>groovy-maven-plugin</artifactId>
-                <version>2.1.1</version>
+                <groupId>org.codehaus.gmavenplus</groupId>
+                <artifactId>gmavenplus-plugin</artifactId>
+                <version>2.1.0</version>
                 <executions>
                     <execution>
                         <phase>post-integration-test</phase>
                         <goals>
                             <goal>execute</goal>
                         </goals>
-                        <configuration>
-                            <source>
-                                <![CDATA[
+                    </execution>
+                </executions>
+                <configuration>
+                    <properties>
+                        <property>
+                            <name>ant</name>
+                            <value>disable</value>
+                        </property>
+                    </properties>
+                    <scripts>
+                        <script>
+                            <![CDATA[
+                                import groovy.xml.*;
                                 def reportFile = new File(System.getProperty("user.dir") + "/target/site/jacoco/index.html")
 
                                 if (!reportFile.exists() || !reportFile.canRead()) {
@@ -294,10 +299,18 @@
                                     return parser
                                 }
                                 ]]>
-                            </source>
-                        </configuration>
-                    </execution>
-                </executions>
+                        </script>
+                    </scripts>
+
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.codehaus.groovy</groupId>
+                        <artifactId>groovy-xml</artifactId>
+                        <version>3.0.14</version>
+                        <scope>runtime</scope>
+                    </dependency>
+                </dependencies>
             </plugin>
         </plugins>
     </build>
