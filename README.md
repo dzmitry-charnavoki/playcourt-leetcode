@@ -1,9 +1,4 @@
-
-<details><summary>dev info</summary>
-
 [![CI](https://github.com/dzmitry-charnavoki/playcourt-leetcode/actions/workflows/ci.yml/badge.svg)](https://github.com/dzmitry-charnavoki/playcourt-leetcode/actions/workflows/ci.yml)
-
-</details>
 
 ## playcourt for leetcode problems in Java
 
@@ -12,7 +7,6 @@ Repository to play with problems (leetcode)
 
 
 ___
-
 
 <details><summary>dev land </summary>
 this section will be moved
