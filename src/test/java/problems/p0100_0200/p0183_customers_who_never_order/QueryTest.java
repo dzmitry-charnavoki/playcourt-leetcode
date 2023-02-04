@@ -1,7 +1,6 @@
-package problems.p0100_0200.p0182_duplicate_emails;
+package problems.p0100_0200.p0183_customers_who_never_order;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.sql.Connection;
@@ -12,25 +11,23 @@ import org.junit.jupiter.api.Test;
 import org.zapodot.junit.db.annotations.EmbeddedDatabase;
 import org.zapodot.junit.db.annotations.EmbeddedDatabaseTest;
 import org.zapodot.junit.db.common.CompatibilityMode;
-import problems.FileUtil;
 import problems.utils.WithQuery;
 
 @EmbeddedDatabaseTest(
     compatibilityMode = CompatibilityMode.MySQL,
-    initialSqlResources = "src/main/java/problems/p0100_0200/p0182_duplicate_emails/sql-schema.sql")
+    initialSqlResources = "src/main/java/problems/p0100_0200/p0183_customers_who_never_order/sql-schema.sql")
 class QueryTest {
-
 
     @Test
     @SneakyThrows
     void testScript1(final @EmbeddedDatabase Connection connection,
                      final @WithQuery String script) {
-
         try (final Statement statement = connection.createStatement();
              final ResultSet resultSet = statement.executeQuery(script)) {
             assertTrue(resultSet.next());
-            assertEquals("a@b.com", resultSet.getNString(1));
-            assertFalse(resultSet.next());
+            assertEquals("Henry", resultSet.getNString(1));
+            assertTrue(resultSet.next());
+            assertEquals("Max", resultSet.getNString(1));
         }
     }
 

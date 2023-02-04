@@ -1,6 +1,9 @@
 #### 182. Duplicate Emails
 
 <span style="color:green">***Easy***</span>
+___
+
+SQL Schema
 
 Table: `Person`
 

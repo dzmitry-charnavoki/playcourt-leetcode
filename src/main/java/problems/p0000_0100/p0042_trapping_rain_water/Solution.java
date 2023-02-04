@@ -40,14 +40,14 @@ class Solution {
                 if (height[left] >= leftMax) {
                     leftMax = height[left];
                 } else {
-                    ans += (leftMax - height[left]);
+                    ans += leftMax - height[left];
                 }
                 ++left;
             } else {
                 if (height[right] >= rightMax) {
                     rightMax = height[right];
                 } else {
-                    ans += (rightMax - height[right]);
+                    ans += rightMax - height[right];
                 }
                 --right;
             }
