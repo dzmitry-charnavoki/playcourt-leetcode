@@ -1,8 +1,6 @@
 package problems.p0000_0100.p0043_multiply_strings;
 
-import java.util.Arrays;
-
-public class Solution {
+class Solution {
     public String multiply(String num1, String num2) {
         StringBuilder sb = new StringBuilder();
 
