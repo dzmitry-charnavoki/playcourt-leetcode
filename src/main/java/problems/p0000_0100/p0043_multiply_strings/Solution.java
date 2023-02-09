@@ -7,9 +7,9 @@ class Solution {
         int[] digits = new int[num1.length() + num2.length()];
 
         for (int i = num1.length() - 1; i >= 0; i--) {
-            final int digit1 = (num1.charAt(i) - '0');
+            final int digit1 = num1.charAt(i) - '0';
             for (int j = num2.length() - 1; j >= 0; j--) {
-                final int digit2 = (num2.charAt(j) - '0');
+                final int digit2 = num2.charAt(j) - '0';
                 final int multiply = digit1 * digit2;
                 int sum = multiply + digits[i + j + 1];
                 digits[i + j] += sum / 10;
