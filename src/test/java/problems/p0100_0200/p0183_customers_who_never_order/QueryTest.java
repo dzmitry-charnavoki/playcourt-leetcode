@@ -7,7 +7,10 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import lombok.SneakyThrows;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.parallel.Execution;
+import org.junit.jupiter.api.parallel.ExecutionMode;
 import org.zapodot.junit.db.annotations.EmbeddedDatabase;
 import org.zapodot.junit.db.annotations.EmbeddedDatabaseTest;
 import org.zapodot.junit.db.common.CompatibilityMode;
@@ -16,8 +19,10 @@ import problems.utils.WithQuery;
 @EmbeddedDatabaseTest(
     compatibilityMode = CompatibilityMode.MySQL,
     initialSqlResources = "src/main/java/problems/p0100_0200/p0183_customers_who_never_order/sql-schema.sql")
+@Execution(ExecutionMode.SAME_THREAD)
 class QueryTest {
 
+    @Tag("Database")
     @Test
     @SneakyThrows
     void testScript1(final @EmbeddedDatabase Connection connection,

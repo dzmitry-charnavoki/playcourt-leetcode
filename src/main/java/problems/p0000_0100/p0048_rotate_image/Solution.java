@@ -8,7 +8,7 @@ class Solution {
             int len = n - 2 * i - 1;
             int opp = n - 1 - i;
             for (int j = 0; j < len; j++) {
-                int temp = matrix[i][i + j];
+                final int temp = matrix[i][i + j];
                 matrix[i][i + j] = matrix[opp - j][i];
                 matrix[opp - j][i] = matrix[opp][opp - j];
                 matrix[opp][opp - j] = matrix[i + j][opp];
