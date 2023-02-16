@@ -46,4 +46,11 @@ The query result format is in the following example.
     | Joe      |
     +----------+
 
-**Explanation:** Joe is the only employee who earns more than his manager. 
+**Explanation:** Joe is the only employee who earns more than his manager.
+___
+
+<details><summary>Related topics</summary>
+
+[#Database](https://leetcode.com/tag/database/)
+
+</details>
