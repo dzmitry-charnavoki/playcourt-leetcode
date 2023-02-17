@@ -1,6 +1,7 @@
 package utils;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public final class ListUtils {
@@ -19,13 +20,13 @@ public final class ListUtils {
         return expectedList;
     }
 
-    //    public static List<List<String>> getLists(String[][] expected) {
-    //        List<List<String>> expectedList = new ArrayList<>();
-    //        for (String[] value : expected) {
-    //            List<String> expectedItem = new ArrayList<>();
-    //            expectedList.add(expectedItem);
-    //            expectedItem.addAll(Arrays.asList(value));
-    //        }
-    //        return expectedList;
-    //    }
+    public static List<List<String>> getLists(String[][] expected) {
+        List<List<String>> expectedList = new ArrayList<>();
+        for (String[] value : expected) {
+            List<String> expectedItem = new ArrayList<>();
+            expectedList.add(expectedItem);
+            expectedItem.addAll(Arrays.asList(value));
+        }
+        return expectedList;
+    }
 }
