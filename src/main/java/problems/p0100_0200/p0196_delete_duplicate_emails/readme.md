@@ -44,4 +44,11 @@ The query result format is in the following example.
     | 2  | bob@example.com  |
     +----+------------------+
 
-**Explanation:** john@example.com is repeated two times. We keep the row with the smallest Id = 1. 
+**Explanation:** john@example.com is repeated two times. We keep the row with the smallest Id = 1.
+___
+
+<details><summary>Related topics</summary>
+
+[#Database](https://leetcode.com/tag/database/)
+
+</details>
