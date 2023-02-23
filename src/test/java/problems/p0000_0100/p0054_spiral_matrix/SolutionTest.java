@@ -24,9 +24,17 @@ class SolutionTest {
 
     @Test
     void spiralOrder3() {
-        assertEquals(List.of(1,2,4,3),
+        assertEquals(List.of(1, 2, 4, 3),
             new Solution().spiralOrder(new int[][] {
                 {1, 2}, {3, 4}
+            }));
+    }
+
+    @Test
+    void spiralOrder4() {
+        assertEquals(List.of(1, 2, 3, 4),
+            new Solution().spiralOrder(new int[][] {
+                {1, 2, 3, 4}
             }));
     }
 }
