@@ -334,6 +334,7 @@
                                     println "\n-------------- Jacoco Coverage ---------------------"
                                     println "Lines    : $instructionRatio ($instructionMissed)"
                                     println "Branches : $branchRatio ($branchMissed)"
+                                    println "[Jacoco Coverage report] file:///" + reportFile.getAbsolutePath().replace('\\', '/')
                                     println "----------------------------------------------------\n"
                                 }
 
