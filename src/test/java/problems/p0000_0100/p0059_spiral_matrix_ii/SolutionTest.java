@@ -25,4 +25,14 @@ class SolutionTest {
         assertIntArrayEquals(exp,
             new Solution().generateMatrix(1));
     }
+
+    @Test
+    void generateMatrix3() {
+        int[][] exp = {
+            {1, 2},
+            {4, 3}
+        };
+        assertIntArrayEquals(exp,
+            new Solution().generateMatrix(2));
+    }
 }
