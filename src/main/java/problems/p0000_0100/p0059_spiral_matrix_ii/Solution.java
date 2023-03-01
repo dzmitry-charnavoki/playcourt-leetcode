@@ -8,7 +8,7 @@ class Solution {
         int t = 0;
         int b = n - 1;
         int c = 1;
-        while (l <= r ) {
+        while (l <= r) {
             for (int i = l; i <= r; i++) {
                 ans[t][i] = c++;
             }
