@@ -26,7 +26,7 @@ class Solution {
                     break;
                 case '+':
                 case '-':
-                    if (i > 0 && s.charAt(i - 1) != 'e' ) {
+                    if (i > 0 && s.charAt(i - 1) != 'e') {
                         return false;
                     }
                     break;
