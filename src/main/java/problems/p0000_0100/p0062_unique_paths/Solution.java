@@ -1,5 +1,7 @@
 package problems.p0000_0100.p0062_unique_paths;
 
+import java.util.Arrays;
+
 class Solution {
 
     // top-down
@@ -36,6 +38,21 @@ class Solution {
         return up(i, j - 1) + up(i - 1, j);
     }
 
+    public int uniquePaths3(int m, int n) {
+        int[] row = new int[n];
+        Arrays.fill(row, 1);
+
+        for (int r = m - 1; r > 0; r--) {
+            int[] newRow = new int[n];
+            Arrays.fill(newRow, 1);
+            for (int c = n - 2; c >= 0; c--) {
+                newRow[c] = newRow[c + 1] + row[c];
+            }
+            row = newRow;
+        }
+        return row[0];
+
+    }
 
 
 }

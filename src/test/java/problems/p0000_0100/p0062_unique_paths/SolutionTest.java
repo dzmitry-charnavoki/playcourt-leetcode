@@ -30,8 +30,22 @@ class SolutionTest {
         assertEquals(3, new Solution().uniquePaths2(2, 3));
     }
 
+//    @Test
+//    void uniquePaths_s3() {
+//        assertEquals(1916797311, new Solution().uniquePaths2(51, 9));
+//    }
+
     @Test
-    void uniquePaths_s3() {
-        assertEquals(1916797311, new Solution().uniquePaths2(51, 9));
+    void uniquePaths_s31() {
+        assertEquals(28, new Solution().uniquePaths3(3, 7));
+    }
+    @Test
+    void uniquePaths_s32() {
+        assertEquals(3, new Solution().uniquePaths3(2, 3));
+    }
+
+    @Test
+    void uniquePaths_s33() {
+        assertEquals(1916797311, new Solution().uniquePaths3(51, 9));
     }
 }
