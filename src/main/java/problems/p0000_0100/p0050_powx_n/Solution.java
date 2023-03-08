@@ -1,6 +1,6 @@
 package problems.p0000_0100.p0050_powx_n;
 
-public class Solution {
+class Solution {
     public double myPow(double x, int n) {
         long nn = n;
         double res = 1;
