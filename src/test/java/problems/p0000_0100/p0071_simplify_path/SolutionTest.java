@@ -22,6 +22,11 @@ class SolutionTest {
     }
 
     @Test
+    void simplifyPath31() {
+        assertEquals("/home/foo", new Solution().simplifyPath("/home/./foo/"));
+    }
+
+    @Test
     void simplifyPath4() {
         assertEquals("/", new Solution().simplifyPath("/vdfv/../"));
     }

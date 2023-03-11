@@ -18,9 +18,7 @@ class Solution {
             } else {
                 stack.push(dir);
             }
-
         }
-
         return "/" + String.join("/", stack);
     }
 }
