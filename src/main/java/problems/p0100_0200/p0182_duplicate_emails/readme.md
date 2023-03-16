@@ -3,7 +3,7 @@
 <span style="color:green">***Easy***</span>
 ___
 
-SQL Schema
+[SQL Schema](sql-schema.sql)
 
 Table: `Person`
 
