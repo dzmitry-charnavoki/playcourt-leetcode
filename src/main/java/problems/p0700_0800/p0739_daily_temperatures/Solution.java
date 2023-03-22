@@ -2,7 +2,7 @@ package problems.p0700_0800.p0739_daily_temperatures;
 
 import java.util.Stack;
 
-public class Solution {
+class Solution {
     public int[] dailyTemperatures(int[] temperatures) {
         int[] ans = new int[temperatures.length];
         Stack<Integer> stack = new Stack<>(); //
