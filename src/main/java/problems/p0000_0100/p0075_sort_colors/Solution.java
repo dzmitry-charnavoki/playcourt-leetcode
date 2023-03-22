@@ -1,6 +1,6 @@
 package problems.p0000_0100.p0075_sort_colors;
 
-public class Solution {
+class Solution {
     public void sortColors(int[] nums) {
         // Approach: 2 pointers + swapping
         int l = 0;
