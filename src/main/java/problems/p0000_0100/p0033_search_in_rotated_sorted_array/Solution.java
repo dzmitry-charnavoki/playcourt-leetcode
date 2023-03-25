@@ -12,13 +12,13 @@ class Solution {
                 return mid;
             }
 
-            if (nums[l] <= nums[mid]) {
+            if (nums[l] <= nums[mid]) { // nums[l..m] are sorted
                 if (nums[l] <= target && target <= nums[mid]) {
                     r = mid - 1;
                 } else {
                     l = mid + 1;
                 }
-            } else {
+            } else { // nums[m..n - 1] are sorted
                 if (target <= nums[r] && nums[mid] <= target) {
                     l = mid + 1;
                 } else {
