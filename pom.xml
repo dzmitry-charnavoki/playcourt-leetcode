@@ -367,7 +367,7 @@
                     <dependency>
                         <groupId>org.codehaus.groovy</groupId>
                         <artifactId>groovy-xml</artifactId>
-                        <version>3.0.16</version>
+                        <version>3.0.17</version>
                         <scope>runtime</scope>
                     </dependency>
                 </dependencies>
