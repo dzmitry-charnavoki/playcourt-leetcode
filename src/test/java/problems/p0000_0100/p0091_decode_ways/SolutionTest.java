@@ -20,4 +20,14 @@ class SolutionTest {
         assertEquals(0, new Solution().numDecodings("06"));
     }
 
+    @Test
+    void numDecodings4() {
+        assertEquals(2, new Solution().numDecodings("2026"));
+    }
+
+    @Test
+    void numDecodings5() {
+        assertEquals(1, new Solution().numDecodings("2027"));
+    }
+
 }
