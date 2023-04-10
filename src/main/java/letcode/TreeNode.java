@@ -30,15 +30,18 @@ public class TreeNode {
      * @return TreeNode obj
      */
     public static TreeNode of(Integer... treeValues) {
-        if (treeValues == null || treeValues.length == 0 || treeValues[0] == null) {
+        if (treeValues == null
+            || treeValues.length == 0
+            || treeValues[0] == null) {
             return null;
         }
         TreeNode head = new TreeNode(treeValues[0]);
         Queue<TreeNode> queue = new LinkedList<>();
         queue.add(head);
-        for (int i = 1; i < treeValues.length; i++) {
+        int i = 0;
+        while (!queue.isEmpty()) {
             TreeNode tail = queue.poll();
-            if (treeValues[i] != null) {
+            if (++i < treeValues.length && treeValues[i] != null) {
                 tail.left = new TreeNode(treeValues[i]);
                 queue.offer(tail.left);
             }
@@ -51,20 +54,28 @@ public class TreeNode {
     }
 
     public String toString() {
-        if (left == null && right == null) {
-            return "" + val;
-        } else {
-            String root = "" + val;
-            String leftValue = "null";
-            String rightValue = "null";
-            if (left != null) {
-                leftValue = left.toString();
+        StringBuilder sb = new StringBuilder();
+        Queue<TreeNode> nodeQueue = new LinkedList<>();
+        nodeQueue.offer(this);
+
+        while (!nodeQueue.isEmpty()) {
+            TreeNode currentNode = nodeQueue.poll();
+
+            if (currentNode != null) {
+                sb.append(currentNode.val).append(", ");
+                if (currentNode.left != null || currentNode.right != null) {
+                    nodeQueue.offer(currentNode.left);
+                    nodeQueue.offer(currentNode.right);
+                }
+            } else {
+                sb.append("null, ");
             }
-            if (right != null) {
-                rightValue = right.toString();
-            }
-            return root + ", " + leftValue + ", " + rightValue;
         }
+
+        // Remove the last comma and space
+        sb.setLength(sb.length() - 2);
+
+        return sb.toString();
     }
 
 }
