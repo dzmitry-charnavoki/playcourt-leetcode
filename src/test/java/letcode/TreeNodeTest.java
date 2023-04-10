@@ -18,6 +18,7 @@ class TreeNodeTest {
 
     @Test
     void of_n() {
+        assertNull(TreeNode.of((Integer[]) null));
         assertNull(TreeNode.of(null,1));
         assertNull(TreeNode.of());
     }
@@ -26,6 +27,7 @@ class TreeNodeTest {
     void testToString() {
         assertEquals("1, 2, 3, 4, 5", TreeNode.of(1, 2, 3, 4, 5).toString());
         assertEquals("1, null, 2, 3, null", TreeNode.of(1, null, 2, 3).toString());
+        assertEquals("1, 2, null, 3, null", TreeNode.of(1, 2, null, 3).toString());
     }
 
     @Test
