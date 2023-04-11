@@ -54,7 +54,7 @@ public class TreeNode {
     }
 
     public String toString() {
-        StringBuilder sb = new StringBuilder();
+        StringBuilder sb = new StringBuilder("[");
         Queue<TreeNode> nodeQueue = new LinkedList<>();
         nodeQueue.offer(this);
 
@@ -74,6 +74,7 @@ public class TreeNode {
 
         // Remove the last comma and space
         sb.setLength(sb.length() - 2);
+        sb.append("]");
 
         return sb.toString();
     }
