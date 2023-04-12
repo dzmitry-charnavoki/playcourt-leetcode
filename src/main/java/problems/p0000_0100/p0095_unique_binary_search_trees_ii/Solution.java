@@ -5,7 +5,7 @@ import java.util.List;
 import letcode.TreeNode;
 
 class Solution {
-    List[][] memo;
+    List<TreeNode>[][] memo;
 
     public List<TreeNode> generateTrees(int n) {
         memo = new List[n + 1][n + 1];
