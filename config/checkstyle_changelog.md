@@ -32,3 +32,7 @@ SummaryJavadoc
 #### 01/15 allowedAbbreviationLength
 
 allowedAbbreviationLength" value="0" -> allowedAbbreviationLength" value="1"
+
+#### 04/13 allowedAbbreviationLength
+
+allowedAbbreviationLength" value="1" -> allowedAbbreviationLength" value="3"
