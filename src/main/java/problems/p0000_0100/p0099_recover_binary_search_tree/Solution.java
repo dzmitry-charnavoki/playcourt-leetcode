@@ -4,11 +4,12 @@ import letcode.TreeNode;
 
 class Solution {
     private TreeNode pred = null;
-    private TreeNode x = null;
-    private TreeNode y = null;
+    private TreeNode first = null;
+    private TreeNode second = null;
+
     public void recoverTree(TreeNode root) {
         inorder(root);
-        swap(x, y);
+        swap(first, second);
     }
 
     private void inorder(TreeNode root) {
@@ -19,9 +20,9 @@ class Solution {
         inorder(root.left);
 
         if (pred != null && root.val < pred.val) {
-            y = root;
-            if (x == null) {
-                x = pred;
+            second = root;
+            if (first == null) {
+                first = pred;
             } else {
                 return;
             }
