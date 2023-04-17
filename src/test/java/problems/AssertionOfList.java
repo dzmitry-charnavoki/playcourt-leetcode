@@ -19,6 +19,9 @@ public final class AssertionOfList {
         if (expected == null || actual == null) {
             throw new AssertionFailedError("expected and actual must not be null");
         }
+        if (expected.size() != actual.size()) {
+            throw new AssertionFailedError("expected and actual must have same size");
+        }
         for (int i = 0; i < expected.size(); i++) {
             assertIterableEquals(expected.get(i), actual.get(i));
             //            for (int j = 0; j < expected.get(i).size(); j++) {
