@@ -16,13 +16,13 @@ class Solution {
 
         Queue<TreeNode> queue = new ArrayDeque<>();
         queue.add(root);
-        boolean isLefttoRight=true;
+        boolean isLefttoRight = true;
         while (!queue.isEmpty()) {
             List<Integer> currLevel = new ArrayList<>();
             int s = queue.size();
             for (int i = 0; i < s; i++) {
                 root = queue.poll();
-                if (isLefttoRight){
+                if (isLefttoRight) {
                     currLevel.add(root.val);
                 } else {
                     currLevel.add(0, root.val);
