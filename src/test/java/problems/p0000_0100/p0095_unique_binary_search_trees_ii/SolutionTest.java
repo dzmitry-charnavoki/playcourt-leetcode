@@ -11,7 +11,6 @@ class SolutionTest {
     @Test
     void generateTrees1() {
         List<TreeNode> ltn = new Solution().generateTrees(3);
-        System.out.println(ltn);
         assertEquals(5, ltn.size());
         assertEquals("[1, null, 2, null, 3]", ltn.get(0).toString());
         assertEquals("[1, null, 3, 2, null]", ltn.get(1).toString());
