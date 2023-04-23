@@ -16,7 +16,6 @@ class Solution {
                     dp[j] = true;
                 } else if (i == 0) {
                     dp[j] = dp[j - 1] && s2.charAt(j - 1) == s3.charAt(j - 1);
-                    System.out.println(dp[j]);
                 } else if (j == 0) {
                     dp[j] = dp[j] && s1.charAt(i - 1) == s3.charAt(i - 1);
                 } else {
