@@ -2,7 +2,7 @@ package problems.p1400_1500.p1416_restore_the_array;
 
 class Solution {
     public int numberOfArrays(String s, int k) {
-        int aMod = 1_000_000_007; // constrain
+        int modOfAns = 1_000_000_007; // constrain
 
         // dp[i] consist amount of possible arrays that may be created from s[0:i]
         int[] dp = new int[s.length() + 1];
@@ -18,7 +18,7 @@ class Solution {
                 if (num > k) {
                     break;
                 }
-                dp[i] = (dp[i] + dp[j + 1]) % aMod;
+                dp[i] = (dp[i] + dp[j + 1]) % modOfAns;
             }
         }
         return dp[0];
