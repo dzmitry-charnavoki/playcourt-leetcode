@@ -8,10 +8,10 @@ class Solution {
         }
         int sum = 0;
         int t = 0;
-        while (num > 0){
+        while (num > 0) {
             t = num % 10;
             num = num / 10;
-            sum+=t;
+            sum += t;
         }
         return addDigits(sum);
     }
