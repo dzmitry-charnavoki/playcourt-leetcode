@@ -140,4 +140,14 @@ class SolutionTest {
         assertEquals(114, new Solution().maxNumEdgesToRemove(13, edges));
     }
 
+    @Test
+    public void testDifferentUnionResults() {
+        Solution sol = new Solution();
+
+        // 3 edges of type 3, and 1 edge each for Alice and Bob
+        int[][] edges = {{3, 1, 2}, {3, 2, 3}, {3, 3, 4}, {1, 1, 4}, {2, 2, 4}};
+        int result = sol.maxNumEdgesToRemove(4, edges);
+
+        assertEquals(2, result);
+    }
 }
