@@ -22,4 +22,12 @@ class SolutionTest {
             }));
     }
 
+    @Test
+    void findRedundantConnectio3() {
+        assertArrayEquals(new int[] {}, new Solution()
+            .findRedundantConnection(new int[][] {
+                {1, 2}, {2, 3}, {3, 4}, {4, 5}, {0, 1}
+            }));
+    }
+
 }
