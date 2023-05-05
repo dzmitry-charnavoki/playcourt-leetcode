@@ -7,27 +7,27 @@ class Solution {
 
     public String predictPartyVictory(String senate) {
         int n = senate.length();
-        Queue<Integer> qR = new ArrayDeque<>();
-        Queue<Integer> qD = new ArrayDeque<>();
+        Queue<Integer> queueRadiant = new ArrayDeque<>();
+        Queue<Integer> queueDire = new ArrayDeque<>();
 
         for (int i = 0; i < senate.length(); ++i) {
             if (senate.charAt(i) == 'R') {
-                qR.add(i);
+                queueRadiant.add(i);
             } else {
-                qD.add(i);
+                queueDire.add(i);
             }
         }
 
-        while (!qR.isEmpty() && !qD.isEmpty()) {
-            final int indexR = qR.poll();
-            final int indexD = qD.poll();
+        while (!queueRadiant.isEmpty() && !queueDire.isEmpty()) {
+            final int indexR = queueRadiant.poll();
+            final int indexD = queueDire.poll();
             if (indexR < indexD) {
-                qR.add(indexR + n);
+                queueRadiant.add(indexR + n);
             } else {
-                qD.add(indexD + n);
+                queueDire.add(indexD + n);
             }
         }
 
-        return qR.isEmpty() ? "Dire" : "Radiant";
+        return queueRadiant.isEmpty() ? "Dire" : "Radiant";
     }
 }
