@@ -1,4 +1,4 @@
-package problems.p0400_0500.p0511_game_play_analysis_i;
+package problems.p0500_0600.p0511_game_play_analysis_i;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
@@ -19,7 +19,7 @@ import problems.utils.WithQuery;
 
 @EmbeddedDatabaseTest(
     compatibilityMode = CompatibilityMode.MySQL,
-    initialSqlResources = "src/main/java/problems/p0400_0500/p0511_game_play_analysis_i/sql-schema.sql")
+    initialSqlResources = "src/main/java/problems/p0500_0600/p0511_game_play_analysis_i/sql-schema.sql")
 @Execution(ExecutionMode.SAME_THREAD)
 class QueryTest {
 
