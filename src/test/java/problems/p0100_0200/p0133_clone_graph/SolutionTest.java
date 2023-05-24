@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertNotSame;
 import static org.junit.jupiter.api.Assertions.assertNull;
 
 import java.util.Arrays;
-import letcode.Node;
+import letcode.graph.Node;
 import org.junit.jupiter.api.Test;
 
 class SolutionTest {

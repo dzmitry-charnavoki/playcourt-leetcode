@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Queue;
-import letcode.Node;
+import letcode.graph.Node;
 
 class Solution {
     public Node cloneGraph(Node node) {

@@ -4,6 +4,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.Arrays;
 import java.util.List;
+import letcode.graph.Node;
 import org.junit.jupiter.api.Test;
 
 class NodeTest {
