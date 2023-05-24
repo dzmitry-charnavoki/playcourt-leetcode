@@ -26,7 +26,7 @@ public class Node {
     public String toString() {
         List<Node> nodes = new ArrayList<>();
         Node curr = this;
-        while(curr != null) {
+        while (curr != null) {
             nodes.add(curr);
             curr = curr.next;
         }
@@ -42,9 +42,7 @@ public class Node {
             }
             sb.append("],");
         }
-        if (sb.length() > 1) {
-            sb.setLength(sb.length() - 1); // remove trailing comma
-        }
+        sb.setLength(sb.length() - 1); // remove trailing comma
         sb.append(']');
         return sb.toString();
     }
