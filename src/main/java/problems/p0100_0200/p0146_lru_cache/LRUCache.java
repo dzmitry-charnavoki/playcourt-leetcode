@@ -33,6 +33,7 @@ class LRUCache {
         }
         if (order.size() == capacity) {
             Node last = order.iterator().next();
+            // it's not efficient and better to create or two nodes or custom implementation of Set
             order.remove(last);
             cache.remove(last.key);
         }
