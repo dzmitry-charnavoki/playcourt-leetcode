@@ -4,7 +4,7 @@ package problems.p0200_0300.p0297_serialize_and_deserialize_binary_tree;
 import letcode.TreeNode;
 
 class Codec {
-    private static final String DELIMETER = ",";
+    private static final String DELIMITER = ",";
     private static final String N = "N";
 
     // Encodes a tree to a single string.
@@ -17,10 +17,10 @@ class Codec {
     // dfs
     private void preorderSer(TreeNode node, StringBuilder sb) {
         if (node == null) {
-            sb.append(N).append(DELIMETER);
+            sb.append(N).append(DELIMITER);
             return;
         }
-        sb.append(node.val).append(DELIMETER);
+        sb.append(node.val).append(DELIMITER);
         preorderSer(node.left, sb);
         preorderSer(node.right, sb);
     }
@@ -29,7 +29,7 @@ class Codec {
 
     // Decodes your encoded data to tree.
     public TreeNode deserialize(String data) {
-        final String[] vals = data.split(DELIMETER);
+        final String[] vals = data.split(DELIMITER);
         return preorderDsr(vals);
     }
 
