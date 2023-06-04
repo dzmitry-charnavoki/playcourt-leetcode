@@ -25,7 +25,7 @@ public class TreeNode {
      * Helper method to generate TreeNode of nodes from given numbers.
      * 1, null, 2, 3
      * root l   r  l
-     *
+     * bfs approach with preorder
      * @param treeValues array of int as representation of Tree
      * @return TreeNode obj
      */
