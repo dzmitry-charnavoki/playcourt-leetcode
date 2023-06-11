@@ -48,7 +48,7 @@ ___
 [#Array](https://leetcode.com/tag/array/)
 [#Math](https://leetcode.com/tag/math/)
 [#Divide and Conquer](https://leetcode.com/tag/divide-and-conquer/)
-[Geometry](https://leetcode.com/tag/geometry/)
+[#Geometry](https://leetcode.com/tag/geometry/)
 [#Sorting](https://leetcode.com/tag/sorting/)
 [#Heap (Priority Queue)](https://leetcode.com/tag/heap-priority-queue/)
 [#Quickselect](https://leetcode.com/tag/quickselect/)
