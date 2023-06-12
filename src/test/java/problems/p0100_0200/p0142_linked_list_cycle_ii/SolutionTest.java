@@ -41,4 +41,10 @@ class SolutionTest {
         ListNode cn = ListNode.of(1);
         assertNull(new Solution().detectCycle(cn));
     }
+
+    @Test
+    void detectCycle4() {
+        ListNode cn = ListNode.of(1);
+        assertNull(new Solution().detectCycle(null));
+    }
 }
