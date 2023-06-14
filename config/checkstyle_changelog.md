@@ -36,3 +36,9 @@ allowedAbbreviationLength" value="0" -> allowedAbbreviationLength" value="1"
 #### 04/13 allowedAbbreviationLength
 
 allowedAbbreviationLength" value="1" -> allowedAbbreviationLength" value="3"
+
+#### 06/14 LocalVariableName & MethodName
+
+MethodName: ^[a-z][a-z0-9]\w*$ -> ^[a-z]?[a-z0-9]\w*$
+
+LocalVariableName: ^[a-z]([a-z0-9][a-zA-Z0-9]*)?$ -> ^[a-z]?([a-z0-9][a-zA-Z0-9]*)?$
