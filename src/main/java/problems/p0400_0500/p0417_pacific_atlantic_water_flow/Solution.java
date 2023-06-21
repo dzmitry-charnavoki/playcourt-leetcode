@@ -11,7 +11,8 @@ public class Solution {
     public List<List<Integer>> pacificAtlantic(int[][] heights) {
         List<List<Integer>> res = new ArrayList<>();
 
-        int rows = heights.length, cols = heights[0].length;
+        int rows = heights.length;
+        int cols = heights[0].length;
         boolean[][] pacific = new boolean[rows][cols];
         boolean[][] atlantic = new boolean[rows][cols];
 
