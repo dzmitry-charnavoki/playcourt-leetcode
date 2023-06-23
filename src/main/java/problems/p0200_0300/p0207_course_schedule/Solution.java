@@ -21,10 +21,9 @@ class Solution {
 
         int[] visited = new int[numCourses];
         for (int i = 0; i < numCourses; i++) {
-            if (visited[i] == NOT_VISITED) {
-                if (isCyclic(adj, visited, i)) {
-                    return false;
-                }
+            if (visited[i] == NOT_VISITED &&
+                isCyclic(adj, visited, i)) {
+                return false;
             }
         }
         return true;
@@ -37,10 +36,9 @@ class Solution {
 
         visited[curr] = VISITING;
         for (int i = 0; i < adj.get(curr).size(); i++) {
-            if (visited[adj.get(curr).get(i)] != 1) {
-                if (isCyclic(adj, visited, adj.get(curr).get(i))) {
-                    return true;
-                }
+            if (visited[adj.get(curr).get(i)] != 1
+                && isCyclic(adj, visited, adj.get(curr).get(i))) {
+                return true;
             }
         }
         visited[curr] = FINISHED;
