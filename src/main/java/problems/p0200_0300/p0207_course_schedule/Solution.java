@@ -5,8 +5,7 @@ import java.util.List;
 
 class Solution {
 
-    public static final int NOT_VISITED = 0;
-    public static final int FINISHED = 1;
+    public static final int VISITED = 1;
     public static final int VISITING = 2;
 
     public boolean canFinish(int numCourses, int[][] prerequisites) {
@@ -21,8 +20,7 @@ class Solution {
 
         int[] visited = new int[numCourses];
         for (int i = 0; i < numCourses; i++) {
-            if (visited[i] == NOT_VISITED &&
-                isCyclic(adj, visited, i)) {
+            if (isCyclic(adj, visited, i)) {
                 return false;
             }
         }
@@ -33,15 +31,17 @@ class Solution {
         if (visited[curr] == 2) {
             return true;
         }
+        if (visited[curr] == 1) {
+            return false;
+        }
 
         visited[curr] = VISITING;
         for (int i = 0; i < adj.get(curr).size(); i++) {
-            if (visited[adj.get(curr).get(i)] != 1
-                && isCyclic(adj, visited, adj.get(curr).get(i))) {
+            if (isCyclic(adj, visited, adj.get(curr).get(i))) {
                 return true;
             }
         }
-        visited[curr] = FINISHED;
+        visited[curr] = VISITED;
         return false;
     }
 
