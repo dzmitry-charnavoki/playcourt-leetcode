@@ -1,6 +1,5 @@
 package problems.p0100_0200.p0139_word_break;
 
-import java.util.Arrays;
 import java.util.List;
 
 class Solution {
