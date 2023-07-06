@@ -29,4 +29,21 @@ class Solution {
             dfs(graph, arrivals.poll(), ans);
         ans.addFirst(itinerary);
     }
+	
+	/*
+	DFS Path: JFK -> MUC -> LHR -> SFO -> SJC
+	Final Itinerary: [SJC]
+
+	DFS Path: JFK -> MUC -> LHR -> SFO
+	Final Itinerary: [SFO, SJC]
+
+	DFS Path: JFK -> MUC -> LHR
+	Final Itinerary: [LHR, SFO, SJC]
+
+	DFS Path: JFK -> MUC
+	Final Itinerary: [MUC, LHR, SFO, SJC]
+
+	DFS Path: JFK
+	Final Itinerary: [JFK, MUC, LHR, SFO, SJC]
+	*/
 }
