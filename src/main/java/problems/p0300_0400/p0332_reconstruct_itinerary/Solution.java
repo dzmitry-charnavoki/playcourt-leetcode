@@ -14,16 +14,12 @@ class Solution {
      * just comment.
      * DFS Path: JFK -> MUC -> LHR -> SFO -> SJC
      * Final Itinerary: [SJC]
-     * <p>
      * DFS Path: JFK -> MUC -> LHR -> SFO
      * Final Itinerary: [SFO, SJC]
-     * <p>
      * DFS Path: JFK -> MUC -> LHR
      * Final Itinerary: [LHR, SFO, SJC]
-     * <p>
      * DFS Path: JFK -> MUC
      * Final Itinerary: [MUC, LHR, SFO, SJC]
-     * <p>
      * DFS Path: JFK
      * Final Itinerary: [JFK, MUC, LHR, SFO, SJC]
      */
