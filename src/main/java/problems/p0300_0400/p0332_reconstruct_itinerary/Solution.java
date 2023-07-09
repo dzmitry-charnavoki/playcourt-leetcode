@@ -9,12 +9,30 @@ import java.util.PriorityQueue;
 import java.util.Queue;
 
 class Solution {
+
+    /**
+     * just comment.
+     * DFS Path: JFK -> MUC -> LHR -> SFO -> SJC
+     * Final Itinerary: [SJC]
+     * <p>
+     * DFS Path: JFK -> MUC -> LHR -> SFO
+     * Final Itinerary: [SFO, SJC]
+     * <p>
+     * DFS Path: JFK -> MUC -> LHR
+     * Final Itinerary: [LHR, SFO, SJC]
+     * <p>
+     * DFS Path: JFK -> MUC
+     * Final Itinerary: [MUC, LHR, SFO, SJC]
+     * <p>
+     * DFS Path: JFK
+     * Final Itinerary: [JFK, MUC, LHR, SFO, SJC]
+     */
     public List<String> findItinerary(List<List<String>> tickets) {
 
         LinkedList<String> ans = new LinkedList<>();
         Map<String, Queue<String>> graph = new HashMap<>(); // directed graph
 
-        for(final List<String> itinerary: tickets){
+        for (final List<String> itinerary : tickets) {
             graph.computeIfAbsent(itinerary.get(0), k -> new PriorityQueue<>())
                 .offer(itinerary.get(1));
         }
@@ -23,27 +41,12 @@ class Solution {
         return ans;
     }
 
-    private void dfs(Map<String, Queue<String>> graph, final  String itinerary, Deque<String> ans) {
+    private void dfs(Map<String, Queue<String>> graph, final String itinerary, Deque<String> ans) {
         final Queue<String> arrivals = graph.get(itinerary);
-        while (arrivals != null && !arrivals.isEmpty())
+        while (arrivals != null && !arrivals.isEmpty()) {
             dfs(graph, arrivals.poll(), ans);
+        }
         ans.addFirst(itinerary);
     }
-	
-	/*
-	DFS Path: JFK -> MUC -> LHR -> SFO -> SJC
-	Final Itinerary: [SJC]
 
-	DFS Path: JFK -> MUC -> LHR -> SFO
-	Final Itinerary: [SFO, SJC]
-
-	DFS Path: JFK -> MUC -> LHR
-	Final Itinerary: [LHR, SFO, SJC]
-
-	DFS Path: JFK -> MUC
-	Final Itinerary: [MUC, LHR, SFO, SJC]
-
-	DFS Path: JFK
-	Final Itinerary: [JFK, MUC, LHR, SFO, SJC]
-	*/
 }
