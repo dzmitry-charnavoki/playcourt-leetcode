@@ -23,6 +23,11 @@ class SolutionTest {
     }
 
     @Test
+    void checkValidString_n1() {
+        assertFalse(new Solution().checkValidString("("));
+    }
+
+    @Test
     void checkValidString4() {
         assertTrue(new Solution().checkValidString("()********"));
         assertTrue(new Solution().checkValidString("((((****"));
@@ -32,7 +37,7 @@ class SolutionTest {
         assertTrue(new Solution().checkValidString("(((******))"));
     }
     @Test
-    void checkValidString_n1() {
+    void checkValidString_n2() {
         assertFalse(new Solution().checkValidString(")*("));
         assertFalse(new Solution().checkValidString(")("));
         assertFalse(new Solution().checkValidString("*("));

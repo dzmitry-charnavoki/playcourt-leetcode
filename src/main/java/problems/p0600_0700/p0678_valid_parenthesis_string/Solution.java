@@ -23,7 +23,7 @@ class Solution {
             }
         }
 
-        while (!left.isEmpty() ) {
+        while (!left.isEmpty() && !stars.isEmpty()) {
             if (left.pop() > stars.pop()) {
                 return false;
             }
