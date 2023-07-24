@@ -128,20 +128,12 @@
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
-                <version>0.8.8</version>
+                <version>0.8.10</version>
                 <configuration>
                     <haltOnFailure>true</haltOnFailure>
                     <excludes>
                         <exclude>utils/**/*</exclude>
-                        <!--                        <exclude>com/d4/lc/**/init/**/*</exclude>-->
-                        <!--                        <exclude>com/d4/lc/**/config/**/*</exclude>-->
-                        <!--                        <exclude>com/d4/lc/**/entity/**/*</exclude>-->
-                        <!--                        <exclude>com/d4/lc/**/converter/**/*</exclude>-->
-                        <!--                        <exclude>com/d4/lc/**/rq/**/*</exclude>-->
-                        <!--                        <exclude>com/d4/lc/**/rs/**/*</exclude>-->
-                        <!--                        <exclude>com/d4/lc/**/*Builder.class</exclude>-->
-                        <!--                        <exclude>com/d4/lc/**/*DTO.class</exclude>-->
-                        <!--                        <exclude>com/d4/lc/**/Starter.class</exclude>-->
+                        <exclude>problems/p2000_2100/p2013_detect_squares/DetectSquares*</exclude>
                     </excludes>
                 </configuration>
                 <executions>
